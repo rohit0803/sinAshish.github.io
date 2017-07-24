@@ -68,7 +68,7 @@ nav{
 	margin: auto;
 	margin-top: 2px;
 	height: 2px;
-	width: 0px;
+	width: 7px;
 	background: white;
 	transition: width .2s linear;
 }
