@@ -69,13 +69,13 @@ nav{
 	margin-top: 2px;
 	height: 1px;
 	width: 0px;
-	background: white;
+	background: black;
 	transition: width .2s linear;
 }
 
 .navbar-block:hover:after {
 	width: 96%;
-	background: white;
+	background: black;
 }
 
 .heading {
