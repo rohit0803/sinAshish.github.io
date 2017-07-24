@@ -2,12 +2,15 @@ body, html {
 	padding: 0;
 	margin: 0;
 }
+
 *{
     font-family: font-family: 'Amatic SC', cursive;
 }
 
 div#home {
-	background-image: url(../img/cover8.jpg);
+	
+	background-repeat:no-repeat;
+background-image: url(../img/cover7.jpg);
 	background-size: cover;
 	/*background-size: 115%;*/
 	/*background-position: right bottom;*/
@@ -15,7 +18,7 @@ div#home {
 
 div#about {
 	background-image: url(../img/cover8.jpg);
-	background-size: cover;
+	background-size: 100%;
 }
 
 nav{
@@ -52,7 +55,7 @@ nav{
 	color: black;
 	font-family: 'Dosis', sans-serif;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 18px;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -91,5 +94,12 @@ font-family: 'Indie Flower', cursive;
 }
 
 .white {
-	color: white;
+	color: black;
 }
+
+.dp{
+border-radius:50%;
+width:200px;
+height:200px;
+}
+
