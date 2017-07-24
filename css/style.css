@@ -67,9 +67,9 @@ nav{
 	display: block;
 	margin: auto;
 	margin-top: 2px;
-	height: 1px;
+	height: 2px;
 	width: 0px;
-	background: black;
+	background: white;
 	transition: width .2s linear;
 }
 
