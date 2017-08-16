@@ -201,8 +201,10 @@ font-size:12px;
 
 }
 .main-frame {
-  background: url(images/cover1.jpg) no-repeat center center fixed;
+  background: url(images/.jpg) no-repeat center center fixed;
 	background-size: cover;
-	height: 90vh;
+	height: 100vh;
+
 }
+
 .
