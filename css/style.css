@@ -4,6 +4,13 @@ body, html {
   
 
 }
+@media only screen and (max-width: 480px) {
+	.bio {
+		padding: 3px !important;
+		margin-top: 15px;
+	}
+}
+
 
 *{
     font-family: font-family: 'Amatic SC', cursive;
@@ -39,8 +46,8 @@ body, html {
 	padding: 0;
 	overflow: hidden;
 	background:transparent;
-background-color:transparent;
-border-color:transparent;
+	background-color:transparent;
+	border-color:transparent;
 }
 
 .navbar li{
@@ -84,7 +91,7 @@ color:#000;
 }
 .heading {
 	color: white;
-font-family: 'Indie Flower', cursive;
+	font-family: 'Indie Flower', cursive;
 
 	font-weight: 200;
 	font-size: 94px;
@@ -116,8 +123,8 @@ font-family: 'Indie Flower', cursive;
 }
 
 .social:hover{
-transform:scale(1.5);
-transition-duration:0.2s;
+	transform:scale(1.5);
+	transition-duration:0.2s;
 }
 
 .about .row {
@@ -180,8 +187,17 @@ transition-duration:0.2s;
 	font-weight: 80;
 	font-size: 20px;
 }
+
+.footnote{
+	align-items:center;
+	text-align:center;
+}
 .love{
- width:20px;
-height:20px;
+	 width:40px;
+	height:40px;
+}
+.nav a{
+font-size:12px;
+
 }
 

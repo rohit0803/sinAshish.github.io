@@ -26,6 +26,8 @@
 
 		<!--Stylesheets AND FONTS-->
 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">	
+
 		<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600" rel="stylesheet" type="text/css">
 
 		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dosis|Indie+Flower|Pacifico|Poiret+One" rel="stylesheet">
@@ -50,6 +52,8 @@
 
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
 		<script type="text/javascript" src="js/main.js"></script>
 
 		<script type="text/javascript">
@@ -63,58 +67,40 @@
 	</head>
 
 	<body>
-	 
+	 	<div class="navbar-fixed">
+	 	<nav >
+	 		<div class="nav-wrapper">
+	 			<a href="https://fb.com/i.ashish.sinha" class="brand-logo #c2185b pink darken-2">  Ashish Sinha  </a>
+	 			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	 			<ul class="right hide-on-med-and-down">
+			        <li><a href="#about" >ABOUT</a></li>
+			        <li><a href="http://sinAshish.github.io/blog" target="_blank">BLOG</a></li>
+			        <li><a href="resume.pdf" >RÉSUMÉ</a></li>
+			        <li><a href="#portfolio" target="_blank" >PORTFOLIO</a></li>
+			        <li><a href="http://sinAshish.github.io/blog/contact/" target="_blank">CONTACT</a></li>
+			    </ul>	
+	 			<ul class="side-nav" id="mobile-demo">
+			        <li><a href="#about" >ABOUT</a></li>
+			        <li><a href="http://sinAshish.github.io/blog" target="_blank">BLOG</a></li>
+			        <li><a href="resume.pdf" >RÉSUMÉ</a></li>
+			        <li><a href="#portfolio" target="_blank" >PORTFOLIO</a></li>
+			        <li><a href="http://sinAshish.github.io/blog/contact/" target="_blank">CONTACT</a></li>
+		      </ul>
+	 		</div>
+	 	</nav>
+	 	</div>
 		
-		
-		<div id="particle-canvas">
-
-			<header class="nav-down">
-			<nav class="navbar navbar-default">
-  				<div class="container">
-	    			<div class="navbar-header">
-	      				<button type="button" class="navbar-toggle collapsed transparent" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        				<span class="sr-only">Toggle navigation</span>
-	        				<span class="icon-bar"></span>
-	        				<span class="icon-bar"></span>
-	        				<span class="icon-bar"></span>
-	      				</button>
-	    			</div>
-
-	    			<div class="collapse navbar-collapse fixed" id="bs-example-navbar-collapse-1">
-	      				<ul class="nav navbar-nav navbar-right">
-	      					<li class = "navbar-item">
-								<a class = "white navbar-block" href = "#about">ABOUT</a>
-							</li>
-							<li class = "navbar-item">
-							<a class = "white navbar-block" href = "http://sinAshish.github.io/blog">BLOG</a>
-							</li>
-	      					<li class = "navbar-item">
-							<a class = "white navbar-block" href = "resume.pdf">RÉSUMÉ</a>
-							</li>
-							<li class="navbar-item">
-								<a href="#portfolio" id="portfolio-btn" class="navbar-block">PORTFOLIO</a>
-							</li>
-							
-							<li class = "navbar-item">
-								<a class = "white navbar-block" href = "http://sinAshish.github.io/blog/contact/">CONTACT</a>
-							</li>
-	        				
-	      				</ul>
-	    			</div>
-  				</div>
-			</nav>
-			</header>
-
+			
 			<section class="row jumbotron main-frame slide">
 				
 
-				<div class='middle main-frame-content text-center '>
+				<div class='middle'>
 					<div class='main-info'>
 						<h1 class="white middle heading" style="font-size: 120px;"><strong>Ashish Sinha</strong></h1>
 						<h2 class="subheading">Developer &middot Gamer &middot Quizzer</h2>
 						<br />
 						<div class="social-icons">
-							<a target='_blank' href='https://www.facebook.com/i.ashish.sinha'><img src='images/fb.png' class="social" sizes="96x96" /></a>
+							<a target='_blank' href='https://www.facebook.com/i.ashish.sinha' class="waves-effect waves-light"><img src='images/fb.png' class="social" sizes="96x96" /></a>
 							<a target='_blank' href='https://twitter.com/ashishsinhajsr'><img src='images/twitter.png' class="social" sizes="96x96"/></a>
 							<a target='_blank' href='https://www.linkedin.com/in/ashish-sinha-5305b238/'><img src='images/linkedin.png' class="social" sizes="96x96"/></a>
 							<a target='_blank' href='https://medium.com/@ashish_sinha'><img src='images/medium.png' class="social" sizes="96x96"/></a>
@@ -124,12 +110,12 @@
 				</div>
 			</section>
 
-		</div>
+		
 	
 		<section class=" about " id='about'>
 			<div class="container">
 				<br />
-				<h2 class="white heading text-center">A<span class="underline">bou</span>t</h2>
+				<h2 class="white middle  heading">About</h2>
 				<br />
 				<div class="row">
 					<div class="col-md-5">
@@ -147,7 +133,10 @@
 								I am a sophomore at IIT Roorkee pursuing a B.Tech in Metallurgical and Materials Engineering.
 							</p>
 							<p>
-								My professional interests are software engineering, web development and management. I have built a host of products including Social Networking Sites, Microblogging Apps, Blog Engines, Chrome Extensions, Automation Scripts, etc.
+								My professional interests are software development, web development and management. I have built a host of products including Social Networking Sites, Microblogging Apps, Blog Engines, Automation Scripts, etc.
+							</p>
+							<p>
+								I have developed a new interest in Machine Learning and Open Source.
 							</p>
 							<p>
 								I have a keen interest in Quizzing, Blogging. I try to sketch the buzzings of my mind on paper during my leisure time.
@@ -159,100 +148,132 @@
 			</div>
 		</section>
 
-		<section class='portfolio' id='portfolio'>
+		<section class='portfolio card-panel #c2185b pink darken-2' id='portfolio'>
 			<div class="container">
 				
-				<h2 class="heading white text-center">Portfolio</h2>
+				<h2 class="heading middle  ">Portfolio</h2>
 				<br />
 				<div class="row ">
 					<div class="col-md-3">
-						<div class="card">
-							<div><img src="images/1.png" /></div>
-							<h3 class="subheading">Blog</h3>
-							<p>
+						<div class="card waves-effect waves-teal btn-medium">
+							<div class="card-image">
+								<img src="images/1.png" />
+								<span class="card-title subheading">Blog</span>
+							</div>
+							<div class="card-content">
+								<p>
 								A Personal Blog powered by Jekyll and Github. This serves as a way to pen down my thoughts on random things.
 							</p>
+							</div>
+							
 							<br />
 						</div>
 					</div>
 					<div class="col-md-3">
-						<div class="card">
-							<div><img src="images/2.png" /></div>
-							<h3 class="subheading">Socio-Net</h3>
-							<p>
+						<div class="card waves-effect waves-teal btn-medium" >
+							<div class="card-image">
+								<img src="images/2.png" />
+								<span class="card-title subheading" style="color: black;">Socio-Net</span>
+							</div>
+							<div class="card-content">
+								<p>
 								Socio-Net is a Social Networking Site, similar in style to Facebook. But powered by Django and Laravel.
 							</p>
+							</div>
+							
 							<br />
 						</div>
 					</div>
 					<div class="col-md-3">
-						<div class="card">
-							<div><img src="images/3.png" /></div>
-							<h3 class="subheading">HEC IIT Roorkee</h3>
+						<div class="card waves-effect waves-teal btn-medium">
+							<div class="card-image"><img src="images/3.png" />
+							<span class="card-title subheading">HEC IIT Roorkee</span>
+							</div>
+							<div class="card-content">
 							<p>
 								The official website of HEC IIT Roorkee. A campus body which promotes adventurous sports.
 							</p>
+							</div>
 							<br />
 						</div>
 					</div>
 					<div class="col-md-3">
-						<div class="card">
-							<div><img src="images/4.png" /></div>
-							<h3 class="subheading">Flappy Bird</h3>
+						<div class="card  waves-effect waves-teal btn-medium">
+							<div class="card-image">
+								<img src="images/4.png" />
+								<span class="card-title subheading" style="color: black">Flappy Bird</span>
+							</div>
+							<div class="card-content">
 							<p>
 								A Game made using PyGame. This is my take on the famous addictive game 'Flappy Bird'. 
 							</p>
+							</div>
 							<br />
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-3">
-						<div class="card">
-							<div><img src="images/5.png" /></div>
-							<h3 class="subheading">Gaana Downloader</h3>
+						<div class="card  waves-effect waves-teal btn-medium">
+							<div class="card-image">
+								<img src="images/5.png" />
+								<span class="card-title subheading" style="color: black">Gaana Downloader</span>
+							</div>
+							<div class="card-content">
 							<p>
 								A Scipt to Download Songs from Gaana.com for FREE. 
 							</p>
+							</div>
 							<br />
 						</div>
 					</div>
 					<div class="col-md-3">
-						<div class="card">
-							<div><img src="images/6.png" /></div>
-							<h3 class="subheading">GoT-2048</h3>
+						<div class="card  waves-effect waves-teal btn-medium">
+							<div class="card-image"><img src="images/6.png" />
+								<span class="card-title subheading">GoT-2048</span>
+							</div>
+							<div class="card-content">
 							<p>
 								A web based game similar to 2048. This game is played using Game Of Thrones instead of numbers.
 							</p>
+							</div>
 							<br />
 						</div>
 					</div>
 					<div class="col-md-3">
-						<div class="card">
-							<div><img src="images/7.png" /></div>
-							<h3 class="subheading">Portfolio</h3>
+						<div class="card waves-effect waves-teal btn-medium">
+							<div class="card-image">
+								<img src="images/7.png" />
+								<span class="card-title subheading">Portfolio</span>
+							</div>
+							<div class="card-content">
 							<p>
-								My portfolio site. Built as part of Beginner Frontend Projects under Front End Developer Certification offered by freeCodeCamp.
+								My portfolio site. Built to hmmm, showcase my talent with the front-end languages.
 							</p>
+							</div>
 							<br />
 						</div>
 					</div>
 					<div class="col-md-3">
-						<div class="card">
-							<div><img src="images/8.png" /></div>
-							<h3 class="subheading">Eleos</h3>
+						<div class="card  waves-effect waves-teal btn-medium">
+							<div class="card-image">
+								<img src="images/8.png" />
+								<span class="card-title subheading">Eleos</span>
+							</div>
+							<div class="card-content"></div>
 							<p>
 								Eleos is a psychotherapy counsellor bot built on Node using the Microsoft Bot Framework and Cognitive Services APIs.
 							</p>
+							</div>
 							<br />
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<div class="container" class="middle white subheading">
-			<h4>Made with <img src="images/love.png" class="love"> by <b>Ashish Sinha</b></h4>
+		<div class="container footnote " class=" middle white subheading ">
+			<h4 class="">Made with <a class=" pulse "><img class="love " src="images/love.png"></a> by <b><a href="https://fb.com/i.ashish.sinha">Ashish Sinha</a></b></h4>
 		</div>
-		
+
 		<script type="text/javascript" src = "js/script.js"></script>
 </body>
