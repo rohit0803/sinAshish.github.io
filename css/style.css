@@ -206,5 +206,10 @@ font-size:12px;
 	height: 100vh;
 
 }
-
+#particle{
+background-size:cover;
+}
+#particle-js{
+height:100%;
+}
 .

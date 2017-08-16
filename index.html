@@ -36,7 +36,7 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
@@ -65,9 +65,7 @@
 	       ga('send', 'pageview');
 	    </script>
 
-	    <script type="text/javascript">
-	    	!function(a){var b="object"==typeof self&&self.self===self&&self||"object"==typeof global&&global.global===global&&global;"function"==typeof define&&define.amd?define(["exports"],function(c){b.ParticleNetwork=a(b,c)}):"object"==typeof module&&module.exports?module.exports=a(b,{}):b.ParticleNetwork=a(b,{})}(function(a,b){var c=function(a){this.canvas=a.canvas,this.g=a.g,this.particleColor=a.options.particleColor,this.x=Math.random()*this.canvas.width,this.y=Math.random()*this.canvas.height,this.velocity={x:(Math.random()-.5)*a.options.velocity,y:(Math.random()-.5)*a.options.velocity}};return c.prototype.update=function(){(this.x>this.canvas.width+20||this.x<-20)&&(this.velocity.x=-this.velocity.x),(this.y>this.canvas.height+20||this.y<-20)&&(this.velocity.y=-this.velocity.y),this.x+=this.velocity.x,this.y+=this.velocity.y},c.prototype.h=function(){this.g.beginPath(),this.g.fillStyle=this.particleColor,this.g.globalAlpha=.7,this.g.arc(this.x,this.y,1.5,0,2*Math.PI),this.g.fill()},b=function(a,b){this.i=a,this.i.size={width:this.i.offsetWidth,height:this.i.offsetHeight},b=void 0!==b?b:{},this.options={particleColor:void 0!==b.particleColor?b.particleColor:"#fff",background:void 0!==b.background?b.background:"#1a252f",interactive:void 0!==b.interactive?b.interactive:!0,velocity:this.setVelocity(b.speed),density:this.j(b.density)},this.init()},b.prototype.init=function(){if(this.k=document.createElement("div"),this.i.appendChild(this.k),this.l(this.k,{position:"absolute",top:0,left:0,bottom:0,right:0,"z-index":1}),/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.background))this.l(this.k,{background:this.options.background});else{if(!/\.(gif|jpg|jpeg|tiff|png)$/i.test(this.options.background))return console.error("Please specify a valid background image or hexadecimal color"),!1;this.l(this.k,{background:'url("'+this.options.background+'") no-repeat center',"background-size":"cover"})}if(!/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.particleColor))return console.error("Please specify a valid particleColor hexadecimal color"),!1;this.canvas=document.createElement("canvas"),this.i.appendChild(this.canvas),this.g=this.canvas.getContext("2d"),this.canvas.width=this.i.size.width,this.canvas.height=this.i.size.height,this.l(this.i,{position:"relative"}),this.l(this.canvas,{"z-index":"20",position:"relative"}),window.addEventListener("resize",function(){return this.i.offsetWidth===this.i.size.width&&this.i.offsetHeight===this.i.size.height?!1:(this.canvas.width=this.i.size.width=this.i.offsetWidth,this.canvas.height=this.i.size.height=this.i.offsetHeight,clearTimeout(this.m),void(this.m=setTimeout(function(){this.o=[];for(var a=0;a<this.canvas.width*this.canvas.height/this.options.density;a++)this.o.push(new c(this));this.options.interactive&&this.o.push(this.p),requestAnimationFrame(this.update.bind(this))}.bind(this),500)))}.bind(this)),this.o=[];for(var a=0;a<this.canvas.width*this.canvas.height/this.options.density;a++)this.o.push(new c(this));this.options.interactive&&(this.p=new c(this),this.p.velocity={x:0,y:0},this.o.push(this.p),this.canvas.addEventListener("mousemove",function(a){this.p.x=a.clientX-this.canvas.offsetLeft,this.p.y=a.clientY-this.canvas.offsetTop}.bind(this)),this.canvas.addEventListener("mouseup",function(a){this.p.velocity={x:(Math.random()-.5)*this.options.velocity,y:(Math.random()-.5)*this.options.velocity},this.p=new c(this),this.p.velocity={x:0,y:0},this.o.push(this.p)}.bind(this))),requestAnimationFrame(this.update.bind(this))},b.prototype.update=function(){this.g.clearRect(0,0,this.canvas.width,this.canvas.height),this.g.globalAlpha=1;for(var a=0;a<this.o.length;a++){this.o[a].update(),this.o[a].h();for(var b=this.o.length-1;b>a;b--){var c=Math.sqrt(Math.pow(this.o[a].x-this.o[b].x,2)+Math.pow(this.o[a].y-this.o[b].y,2));c>120||(this.g.beginPath(),this.g.strokeStyle=this.options.particleColor,this.g.globalAlpha=(120-c)/120,this.g.lineWidth=.7,this.g.moveTo(this.o[a].x,this.o[a].y),this.g.lineTo(this.o[b].x,this.o[b].y),this.g.stroke())}}0!==this.options.velocity&&requestAnimationFrame(this.update.bind(this))},b.prototype.setVelocity=function(a){return"fast"===a?1:"slow"===a?.33:"none"===a?0:.66},b.prototype.j=function(a){return"high"===a?5e3:"low"===a?2e4:isNaN(parseInt(a,10))?1e4:a},b.prototype.l=function(a,b){for(var c in b)a.style[c]=b[c]},b});
-	    </script>
+
 	</head>
 
 	<body>
@@ -93,7 +91,7 @@
 	 		</div>
 	 	</nav>
 	 	</div>	
-
+	 	<div id="particle-js"></div>	
 			<section class="row main-frame slide" id="particle" style="background-image: url(images/cover2.png);font-color: black; border-right: 0">
 				
 				
@@ -122,13 +120,13 @@
 				<h2 class="white middle  heading">About</h2>
 				<br />
 				<div class="row">
-					<div class="col-md-5">
+					<div class="col s5">
 						<div>
 							<img src='images/me.jpg' class="dp" />
 						</div>
 						<br>
 					</div>
-					<div class="col-md-7">
+					<div class="col s7">
 						<div class="bio subheading" style="font-size: 20px;">
 							<p>
 								Hello!
@@ -158,11 +156,11 @@
 				<h2 class="heading middle  ">Portfolio  </h2>
 				<br />
 				<div class="row ">
-					<div class="col-md-3">
+					<div class="col s3">
 						<div class="card waves-effect waves-teal btn-medium">
 							<div class="card-image">
-								<img src="images/1.png" />
-								<span class="card-title subheading">Blog</span>
+								<img src="images/blog2.png" />
+								<span class="card-title subheading" style="color: black">Blog</span>
 							</div>
 							<div class="card-content">
 								<p>
@@ -173,11 +171,11 @@
 							<br />
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col s3">
 						<div class="card waves-effect waves-teal btn-medium" >
 							<div class="card-image">
-								<img src="images/2.png" />
-								<span class="card-title subheading" style="color: black;">Socio-Net</span>
+								<img src="images/socio-net.jpeg" />
+								<span class="card-title subheading" >Socio-Net</span>
 							</div>
 							<div class="card-content">
 								<p>
@@ -188,9 +186,9 @@
 							<br />
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col s3">
 						<div class="card waves-effect waves-teal btn-medium">
-							<div class="card-image"><img src="images/3.png" />
+							<div class="card-image"><img src="images/hec.png" />
 							<span class="card-title subheading">HEC IIT Roorkee</span>
 							</div>
 							<div class="card-content">
@@ -201,11 +199,11 @@
 							<br />
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col s3">
 						<div class="card  waves-effect waves-teal btn-medium">
 							<div class="card-image">
-								<img src="images/4.png" />
-								<span class="card-title subheading" style="color: black">Flappy Bird</span>
+								<img src="images/flappy.jpg" />
+								<span class="card-title subheading" >Flappy Bird</span>
 							</div>
 							<div class="card-content">
 							<p>
@@ -217,11 +215,11 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col s3">
 						<div class="card  waves-effect waves-teal btn-medium">
 							<div class="card-image">
-								<img src="images/5.png" />
-								<span class="card-title subheading" style="color: black">Gaana Downloader</span>
+								<img src="images/gaana.png" />
+								<span class="card-title subheading">Gaana Downloader</span>
 							</div>
 							<div class="card-content">
 							<p>
@@ -231,10 +229,10 @@
 							<br />
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col s3">
 						<div class="card  waves-effect waves-teal btn-medium">
-							<div class="card-image"><img src="images/6.png" />
-								<span class="card-title subheading">GoT-2048</span>
+							<div class="card-image"><img src="images/GOT.png" />
+								<span class="card-title subheading" style="color: black;">GoT-2048</span>
 							</div>
 							<div class="card-content">
 							<p>
@@ -244,10 +242,10 @@
 							<br />
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col s3">
 						<div class="card waves-effect waves-teal btn-medium">
 							<div class="card-image">
-								<img src="images/7.png" />
+								<img src="images/portfolio.png" />
 								<span class="card-title subheading">Portfolio</span>
 							</div>
 							<div class="card-content">
@@ -258,7 +256,7 @@
 							<br />
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col s3">
 						<div class="card  waves-effect waves-teal btn-medium">
 							<div class="card-image">
 								<img src="images/8.png" />
@@ -280,4 +278,6 @@
 		</div>
 
 		<script type="text/javascript" src = "js/script.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/particle-js.js"></script>
 </body>
