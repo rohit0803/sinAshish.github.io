@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	$(".button-collapse").sideNav();
+        
     $(document).on('click', '.normal-links', function(event) {
         event.preventDefault();
         $('html, body').animate({

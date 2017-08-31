@@ -193,11 +193,24 @@ color:#000;
 	text-align:center;
 }
 .love{
-	 width:40px;
-	height:40px;
+	 width:20px;
+	height20px;
 }
 .nav a{
 font-size:12px;
 
 }
+.main-frame {
+  background: url(images/.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height: 100vh;
 
+}
+#particle{
+background-size:cover;
+}
+#particle-js{
+height:100%;
+width:100%;
+}
+.
