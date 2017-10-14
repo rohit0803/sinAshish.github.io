@@ -17,13 +17,13 @@ body {
 	overflow-x: hidden;
 }
 
-.navbar {
+/*.navbar {
 	margin-bottom: 0px !important;
 	padding: 12px !important;
 	background-color: #FFB000!important;
 	border: 0 !important;
 	border-radius: 0 !important;
-}
+}*/
 
 .navbar li a, .navbar-brand {
 	font-size: 16px;
